@@ -1,0 +1,29 @@
+div.TextBoxComponent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ccc;
+  padding: 10px;
+}
+
+div.instruction {
+  font-size: 12px;
+  font-weight: bold;
+  color: #555;
+  padding-bottom: 10px;
+}
+
+div.inputOuter {
+  position: relative;
+}
+
+input.emoji_field {
+  box-sizing : border-box;
+  width: 100%;
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  font-size: 20px;
+  outline: none;
+}
