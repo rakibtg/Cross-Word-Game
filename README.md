@@ -1,2 +1,6 @@
-#Cross Word Game!
-##Made using React JS
+# Welcome To CrossWord
+## Made using React JS
+CrossWord is a dead simple game!
+
+The goal of this game is to burst all the random bubbles before they reach down to the bottom, 
+by typing the text it contains.
