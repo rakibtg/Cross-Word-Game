@@ -16,6 +16,7 @@ div.WordEmojiComponent {
   animation-iteration-count: infinite;
   animation-name: confuse_them;
   position: absolute;
+  border: 2px solid #666;
 }
 
 @keyframes confuse_them {
