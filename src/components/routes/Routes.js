@@ -8,7 +8,7 @@ class Routes extends Component {
   constructor( props ) {
     super( props )
     this.state = {
-      currentComponent: 'BoardComponent'
+      currentComponent: 'WelcomeComponent'
     }
   }
 

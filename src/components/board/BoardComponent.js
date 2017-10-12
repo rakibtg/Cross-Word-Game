@@ -23,7 +23,7 @@ class BoardComponent extends Component {
   }
 
   makeObject() {
-    if( this.state.totalObject < 5 ) {
+    if( this.state.totalObject < 10 ) {
       let objectName = this.generateObjectName( 5 )
       const oldStateOfObject = this.state.objectComponents
       let newObj = oldStateOfObject
@@ -85,6 +85,14 @@ class BoardComponent extends Component {
     }
   }
 
+  restartGame() {
+    this.setState( {
+      objectComponents: {},
+      totalObject: 0,
+      typedObjectName: '',
+    } )
+  }
+
   render() {
     return (
       <div className="BoardComponent">
@@ -94,6 +102,7 @@ class BoardComponent extends Component {
         <TextBoxComponent
           destroyObjectOnMatch = { this.destroyObjectOnMatch.bind( this ) }
           value={ this.state.typedObjectName }
+          restart = { this.restartGame.bind( this ) }
         />
       </div>
     )

@@ -6,7 +6,20 @@ class TextBoxComponent extends Component {
   render() {
     return (
       <div className="TextBoxComponent">
-        <div className="instruction">Type a emoji name here</div>
+        <div className="instruction"
+          style={{
+            textAlign: 'center',
+          }}>
+          Destroy a bubble by typing its name! 
+          <button
+            style={{
+              marginLeft: 15,
+            }}
+            onClick={() => {
+              this.props.restart()
+            }}
+          >Re-start Game</button>
+        </div>
         <div className="inputOuter">
           <input type="text"
             onChange = {(val)=>{
@@ -14,6 +27,7 @@ class TextBoxComponent extends Component {
             }}
             value = { this.props.value }
             className="emoji_field"
+            placeholder="Type a bubble name here to destry the bubble"
           />
         </div>
       </div>
